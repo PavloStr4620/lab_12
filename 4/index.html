@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let x = +prompt("Введіть 1 сторону");
+    let y = +prompt("Введіть 2 сторону");
+    let z = +prompt("Введіть 3 сторону");
+    let p = 0;
+    let area = 0;
+
+    if(isNaN(x) || isNaN(y) || isNaN(z) || x <= 0 || y <= 0 || z <= 0 ){
+        document.write("Ви ввели не коректні дані");
+    }
+    else{
+        p = (x + y + z) / 2;
+        area = Math.sqrt(p * (p - x) * (p - y) * (p - z));
+        document.write("Площа трикуника = " + area.toFixed(3));
+        document.write('<br>');
+
+        if(x * x + y * y === z * z || x * x + z * z === y * y || z * z + y * y === x * x){
+            document.write("Трикутник прямокутний");
+        }
+        else{
+            document.write("Трикутник не прямокутний");
+        }
+    }
+</script>
+</html>

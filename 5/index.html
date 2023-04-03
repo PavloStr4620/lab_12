@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let now = new Date();
+    let hours = now.getHours();
+    console.log(`Поточний час: ${hours}`);
+
+    if(hours > 23 && hours < 5){
+        document.write("Доброї ночі");
+    }   
+    else if(hours > 5 && hours < 11){
+        document.write("Доброго ранку");
+    }
+    else if(hours > 11 && hours < 17){
+        document.write("Доброго дня");
+    }
+    else if(hours > 17 && hours < 23){
+        document.write("Доброго вечора");
+    }
+
+</script>
+</html>
